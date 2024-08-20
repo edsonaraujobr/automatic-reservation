@@ -12,7 +12,7 @@ load_dotenv()
 chrome_options = Options()
 chrome_options.add_argument("--incognito")
 chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-#chrome_options.add_argument("--headless")  # Executar em modo headless (sem abrir o navegador)
+chrome_options.add_argument("--headless")  # Executar em modo headless (sem abrir o navegador)
 
 driver = webdriver.Chrome(options=chrome_options)
 
